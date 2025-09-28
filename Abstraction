@@ -10,3 +10,21 @@ class Dog(Animal):
         
 dog = Dog() 
 print(dog.sound())
+
+
+-------------------------------
+class BankAccount:
+    def __init__(self,name,balance):
+        self.name = name
+        self.balance = balance
+        
+    def getbalance(self):
+        return self.balance
+        
+class bank(BankAccount):
+    def acc_type(self):
+        print(self.balance,"hold a Debit card")  
+
+
+b = bank("siva",100)
+b.acc_type()
